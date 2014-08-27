@@ -1,7 +1,9 @@
 define([
-    "text!./ContentView1.html"
-], function (template, MainController) {
+    "text!./ContentView1.html",
+    "app/controller/DetailController"
+], function (template, Controller) {
     return {
-        template: template
+        template: template,
+        controller: Controller
     }
 });

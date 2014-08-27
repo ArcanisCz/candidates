@@ -1,9 +1,11 @@
 define([
+    "app/controller/ListController",
     "text!./ContentView.html",
     "less!./ContentView.less"
-], function (template) {
+], function (Controller, template) {
     return {
         default: true,
-        template: template
+        template: template,
+        controller: Controller
     }
 });
