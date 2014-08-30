@@ -8,6 +8,7 @@ define([
             nls: "./nls",
             core: "./core",
             Factory: "./core/Factory",
+            spec: "./spec",
 
             //libs
             text: "./lib/require/text",
@@ -21,7 +22,8 @@ define([
             less: "./lib/require-less/less",
             lessc: "./lib/require-less/lessc",
             "less-builder": "./lib/require-less/less-builder",
-            normalize: "./lib/require-less/normalize"
+            normalize: "./lib/require-less/normalize",
+            angularMocks: '../lib/angular/angular-mocks'
         },
 
         shim: {
@@ -39,6 +41,10 @@ define([
             'angularView': {
                 angularModuleName: "view-segment",
                 deps: ['angular']
+            },
+            angularMocks: {
+                deps:['angular'],
+                'exports':'angular.mock'
             }
         },
         less: {
