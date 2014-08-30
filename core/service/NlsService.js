@@ -1,8 +1,7 @@
 define([
-    "Factory",
     "i18n!nls/texts"
-], function (factory, texts) {
-    return  factory.service("nls", [function () {
+], function (texts) {
+    return  [function () {
 
         var cache = {};
 
@@ -37,5 +36,5 @@ define([
             setNamespace: setNamespace,
             getMessageNS: getMessageNS
         };
-    }])
+    }]
 });

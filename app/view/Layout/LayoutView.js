@@ -1,10 +1,9 @@
 define([
-    "app/controller/ListController",
-    "text!./ContentView.html",
-    "less!./ContentView.less"
+    "controller!app/controller/MainController",
+    "text!./LayoutView.html",
+    "less!./LayoutView.less"
 ], function (Controller, template) {
     return {
-        default: true,
         template: template,
         controller: Controller
     }

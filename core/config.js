@@ -9,6 +9,8 @@ define([
             core: "./core",
             Factory: "./core/Factory",
             spec: "./spec",
+            service: "./core/loader/service",
+            controller: "./core/create/controller",
 
             //libs
             text: "./lib/require/text",

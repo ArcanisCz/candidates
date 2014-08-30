@@ -1,10 +1,9 @@
 define([
-    "Factory",
-    "core/controller/BaseController"
-], function (factory, BaseController) {
-    return factory.controller('ListController', ['$scope', function ($scope) {
-        factory.inheritScope(BaseController, $scope);
+    "core/scope/NlsScope"
+], function (NlsScope) {
+    return ['$scope', function ($scope) {
+        NlsScope($scope);
 
         $scope.setMsgNS("view.ListController");
-    }]);
+    }];
 });

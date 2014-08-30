@@ -1,16 +1,16 @@
 define([
-    "app/view/LayoutView",
-    "app/view/ContentView",
-    "app/view/ContentView1"
-], function (LayoutView, ContentView,ContentView1) {
+    "./view/Layout/LayoutView",
+    "./view/Home/HomeView",
+    "./view/Detail/DetailView"
+], function (LayoutView, HomeView,DetailView) {
     return function (route, segment) {
         segment
             .when('/', 's1')
             .when('/detail', 's1.detail')
             .segment('s1', LayoutView)
             .within()
-                .segment("home", ContentView)
-                .segment("detail", ContentView1)
+                .segment("home", HomeView)
+                .segment("detail", DetailView)
             .up();
         route.otherwise({redirectTo: '/'});
     }
