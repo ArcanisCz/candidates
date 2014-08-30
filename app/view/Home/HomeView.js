@@ -1,5 +1,5 @@
 define([
-    "controller!app/controller/ListController",
+    "controller!app/controller/HomeController",
     "text!./HomeView.html",
     "less!./HomeView.less"
 ], function (Controller, template) {
