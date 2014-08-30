@@ -10,6 +10,7 @@ define([
             spec: "./spec",
             service: "./core/loader/service",
             controller: "./core/loader/controller",
+            controller: "./core/loader/directive",
 
             //libs
             text: "./lib/require/text",
