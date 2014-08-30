@@ -1,5 +1,5 @@
 define([
-    "controller!app/controller/MainController",
+    "controller!app/controller/LayoutController",
     "text!./LayoutView.html",
     "less!./LayoutView.less"
 ], function (Controller, template) {

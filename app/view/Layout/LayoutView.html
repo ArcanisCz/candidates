@@ -12,7 +12,7 @@
                 <li ng-repeat="item in layout.menu" class="{{layout.getActiveClass(item.link)}}">
                     <a href="#/{{item.link}}">
                         <i class="fa fa-fw fa-{{item.ico}}"></i>
-                        {{item.name}}
+                        {{msgNS(item.name)}}
                     </a>
                 </li>
             </ul>
