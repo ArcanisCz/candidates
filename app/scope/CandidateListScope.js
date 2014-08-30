@@ -8,7 +8,7 @@ define([
         }
 
         $scope.candidateList.load(function (data) {
-            console.log(data);
+//            console.log(data);
             $scope.candidateList.candidates = data;
             $scope.$apply();
         })
