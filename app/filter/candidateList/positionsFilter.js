@@ -2,12 +2,12 @@ define([
 ], function () {
     return function () {
         return function filter(input) {
-            var text = "";
+            var items = [];
             for (var i in input) {
                 var item = input[i];
-                text += " " + item.positionName;
+                items.push(item.positionName);
             }
-            return text;
+            return items.join(", ");
         }
     };
 });
