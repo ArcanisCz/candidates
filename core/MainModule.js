@@ -15,5 +15,5 @@ define([
         return deps;
     }
 
-    return angular.module(config.appName, createDeps(config.shim));
+    return angular.module(config.appName, createDeps(config.shim).concat(App));
 });
