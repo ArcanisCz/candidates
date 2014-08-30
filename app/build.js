@@ -26,6 +26,8 @@
         App: "../../core/App",
         Factory: "../../core/Factory",
         core: "../../core",
+        service: "../../core/loader/service",
+        controller: "../../core/loader/controller",
 
         //libs
         main: "../../core/main",

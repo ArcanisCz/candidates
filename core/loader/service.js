@@ -27,6 +27,7 @@ define([
     }
 
     return {
-        load: load
+        load: load,
+        pluginBuilder : 'core/loader/builder'
     };
 });

@@ -9,10 +9,10 @@ define([
             app.controller(controllerName, controllerDefinition);
             done(controllerName);
         });
-    }
-
+    };
 
     return {
-        load: load
+        load: load,
+        pluginBuilder : 'core/loader/builder'
     };
 });
