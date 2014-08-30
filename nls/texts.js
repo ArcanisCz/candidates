@@ -1,7 +1,7 @@
 define({
     root: {
         view: {
-            MainController: {
+            LayoutController: {
                 title: "Candidate Management System",
                 menu: {
                     candidates: "Kandidáti",
