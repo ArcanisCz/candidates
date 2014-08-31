@@ -29,8 +29,8 @@
                         </tr>
                         <tr ng-repeat="candidate in candidateList.candidates">
                             <td>{{candidate.title}} {{candidate.name}} {{candidate.surname}}</td>
-                            <td>{{candidate.technologies | SkillsFilter}}</td>
-                            <td>{{candidate.positions | PositionsFilter}}</td>
+                            <td>{{candidate.technologies | skills}}</td>
+                            <td>{{candidate.positions | positions}}</td>
                             <td>{{candidate.locality}}</td>
                         </tr>
                     </table>
