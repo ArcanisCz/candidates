@@ -6,8 +6,8 @@ define([
             for (var i in input) {
                 var item = input[i];
                 items.push(item.positionName);
+                return items.join(", ");
             }
-            return items.join(", ");
         }
     };
 });

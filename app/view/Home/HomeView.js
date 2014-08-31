@@ -3,7 +3,8 @@ define([
     "text!./HomeView.html",
     "less!./HomeView.less",
     "filter!app/filter/candidateList/PositionsFilter",
-    "filter!app/filter/candidateList/SkillsFilter"
+    "filter!app/filter/candidateList/SkillsFilter",
+    "directive!app/component/PokusDirective AS pokus"
 ], function (Controller, template) {
     return {
         default: true,
