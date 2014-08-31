@@ -1,2 +1,3 @@
 candidates
 ==========
+Some test project
