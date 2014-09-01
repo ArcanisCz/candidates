@@ -1,4 +1,5 @@
 define([
+    "angularTypeahead",
     "uiBootstrap",
     "less!app/less/bootstrap",
     "less!app/less/sb-admin",
@@ -8,6 +9,7 @@ define([
 ], function () {
     return [
         "ui.bootstrap",
+        "siyfion.sfTypeahead",
         "jsTag"
     ];
 });
