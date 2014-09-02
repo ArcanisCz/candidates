@@ -1,15 +1,12 @@
 define([
-    "angularTypeahead",
-    "uiBootstrap",
-    "less!app/less/bootstrap",
-    "less!app/less/sb-admin",
-    "less!app/less/font-awesome",
+    "angular",
     "jsTag",
-    "less!app/less/jsTag"
-], function () {
+    "strapTpl",
+    "strap"
+], function (angular) {
+    angular.module('ngAnimate', [])
     return [
-        "ui.bootstrap",
-        "siyfion.sfTypeahead",
+        "mgcrea.ngStrap",
         "jsTag"
     ];
 });

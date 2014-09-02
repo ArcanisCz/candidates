@@ -5,14 +5,14 @@ define([], function () {
             uiBootstrap: "./lib/ui-bootstrap/ui-bootstrap-tpls-0.11.0",
             jquery: "./lib/jquery/jquery-2.1.1",
             jsTag: "./lib/jsTag/jsTag",
-            typeahead: "./lib/twitter/typeahead",
-            angularTypeahead: "./lib/angular/angular-typeahead"
+            strap: "./lib/strap/angular-strap",
+            strapTpl: "./lib/strap/angular-strap.tpl"
         },
         shim: {
             uiBootstrap: ["angular"],
-            typeahead: ["jquery"],
-            angularTypeahead: ["angular", "jquery", "typeahead"],
-            jsTag: ["angular", "jquery", "angularTypeahead", "typeahead"]
+            jsTag: ["angular", "jquery"],
+            strap: ["angular"],
+            strapTpl: ["angular", "strap"]
         }
     }
 });
