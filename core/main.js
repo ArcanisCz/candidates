@@ -1,10 +1,7 @@
 require([
     "angular",
     "core/MainModule",
-    "core/Layout",
-    "angularRoute",
-    "angularSegment",
-    "angularView"
+    "core/Layout"
 ], function (angular, App, AppLayout) {
     AppLayout.init(App);
     angular.element(document.getElementsByTagName('html')[0]);

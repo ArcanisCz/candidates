@@ -1,19 +1,19 @@
 define([
     'angular',
     "core/config",
-    "app/App"
+    "app/App",
+    "angularRoute",
+    "angularSegment",
+    "angularView"
 ], function (angular, config, App) {
 
-    function createDeps(shim) {
-        var deps = [];
-        for (var name in shim) {
-            var entry = shim[name];
-            if (entry.angularModuleName) {
-                deps.push(entry.angularModuleName);
-            }
-        }
-        return deps;
+    function createDeps() {
+        return [
+            "ngRoute",
+            "route-segment",
+            "view-segment"
+        ]
     }
 
-    return angular.module(config.appName, createDeps(config.shim).concat(App));
+    return angular.module(config.appName, createDeps().concat(App));
 });
