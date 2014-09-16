@@ -23,13 +23,27 @@
                         <tr>
                             <th>Jméno</th>
                             <th>Technologie</th>
+                            <th>Jazyky</th>
                             <th>Pozice</th>
                             <th>Lokalita</th>
                         </tr>
                         <tr ng-repeat="candidate in candidateList.candidates">
                             <td>{{candidate.title}} {{candidate.name}} {{candidate.surname}}</td>
-                            <td>{{candidate.technologies | skills}}</td>
-                            <td>{{candidate.positions | positions}}</td>
+                            <td>
+                                <span ng-repeat="skill in candidate.technologies">
+                                    <skill-element name="{{skill.skillName}}" level="{{skill.skill | skillLevelFilter}}"></skill-element>
+                                </span>
+                            </td>
+                            <td>
+                                <span ng-repeat="language in candidate.languages">
+                                    <skill-element name="{{language.skillName}}" level="{{language.skill | languageLevelFilter}}"></skill-element>
+                                </span>
+                            </td>
+                            <td>
+                                <span ng-repeat="position in candidate.positions">
+                                    <skill-element name="{{position.positionName}}"></skill-element>
+                                </span>
+                            </td>
                             <td>{{candidate.locality}}</td>
                         </tr>
                     </table>

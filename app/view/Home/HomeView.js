@@ -2,9 +2,9 @@ define([
     "controller!app/controller/HomeController",
     "text!./HomeView.html",
     "less!./HomeView.less",
-    "filter!app/filter/candidateList/PositionsFilter AS positions",
-    "filter!app/filter/candidateList/SkillsFilter AS skills",
-    "directive!app/component/PokusDirective AS pokus"
+    "directive!app/component/SkillDirective/SkillDirective AS skillElement",
+    "filter!app/filter/candidateList/skillLevelFilter AS skillLevelFilter",
+    "filter!app/filter/candidateList/languageLevelFilter AS languageLevelFilter"
 ], function (Controller, template) {
     return {
         default: true,
