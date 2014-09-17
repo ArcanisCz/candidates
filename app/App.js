@@ -1,10 +1,12 @@
 define([
-    "uiBootstrap",
-    "less!app/less/bootstrap",
-    "less!app/less/sb-admin",
-    "less!app/less/font-awesome"
-], function () {
+    "angular",
+    "jsTag",
+    "strapTpl",
+    "strap"
+], function (angular) {
+    angular.module('ngAnimate', [])
     return [
-        "ui.bootstrap"
+        "mgcrea.ngStrap",
+        "jsTag"
     ];
 });

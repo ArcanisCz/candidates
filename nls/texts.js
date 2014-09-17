@@ -7,6 +7,12 @@ define({
                     candidates: "Kandidáti",
                     detail: "Detail"
                 }
+            },
+            HomeController: {
+                header: "Výpis"
+            },
+            DetailController: {
+                header: "Detail"
             }
         }
     }
