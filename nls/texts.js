@@ -1,12 +1,18 @@
 define({
     root: {
         view: {
-            MainController: {
+            LayoutController: {
                 title: "Candidate Management System",
                 menu: {
                     candidates: "Kandidáti",
                     detail: "Detail"
                 }
+            },
+            HomeController: {
+                header: "Výpis"
+            },
+            DetailController: {
+                header: "Detail"
             }
         }
     }

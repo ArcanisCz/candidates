@@ -1,27 +1,21 @@
 define([
-    "Factory",
-    "i18n!nls/texts"
-], function (factory, texts) {
-    return  factory.service("nls", [function () {
-
-        var cache = {};
+    "i18n!nls/texts",
+    "service!core/service/CacheService"
+], function (texts, CacheService) {
+    return  function () {
 
         function getMessage(key) {
-            if (cache[key]) {
-                return cache[key];
-            } else {
+            return CacheService.get("nls." + key, function () {
                 var keys = key.split(".");
                 var current = texts;
                 for (var i = 0; i < keys.length; i++) {
                     current = current[keys[i]];
                     if (!current) {
-                        cache[key] = "[" + key + "]";
-                        return cache[key];
+                        return "[" + key + "]";
                     }
                 }
-                cache[key] = current;
                 return current;
-            }
+            });
         };
 
         function setNamespace($scope, scopeKey, namespace) {
@@ -37,5 +31,5 @@ define([
             setNamespace: setNamespace,
             getMessageNS: getMessageNS
         };
-    }])
+    }
 });
